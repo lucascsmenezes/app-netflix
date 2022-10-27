@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <script src="./src/js/index.js" defer></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container-top">
+        <div id="container-img">
+            <img src="./src/img/logo.png" alt="logo" id="logo">
+        </div>
+        <div class="menu-sign">
+            <select class="select-idioma">
+                <option>Inglês</option>
+                <option>Portugues</option>
+            </select>
+            <button class="botaoEntrar" id="login">Entrar</button>
+        </div>
+    </div>
+
+    <div class="section-center">
+        <h1> Filmes ilimitados, programas de TV e muito mais.</h1>
+        <h2>Assista em qualquer lugar. Cancele a qualquer momento.</h2>
+        
+        <div class="form-box">
+            <h3>Pronto para assistir? Digite seu e-mail para criar ou reiniciar sua associação.</h3>
+            <form>
+                <input type="text" id="input_field" placeholder="" required>
+                <p id="placeholder">Digite seu email</p>
+                <input type="submit" id="submit_form" value="Iniciar"> 
+            </form>
+        </div>
+    </div>
+
+    <div class="section-info">
+        <div class="content-left">
+            <h1>Divirta-se na sua TV.</h1>
+            <h2>Assista em Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players e muito mais.</h2>
+        </div>
+        <div class="content-right">
+            <img src="./src/img/tv-background.png" id="tela-background">
+            <video autoplay="autoplay" loop="true" muted>
+                <source src="./src/video/video01.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </div>
+    
+    <div class="section-info">
+        <div class="content-left">
+            <img src="./src/img/mobile-background.jpg" alt="tv-background" id="tela-background">
+            <img src="./src/video/video01.m4v" alt="">
+            <div class="card-story">
+                <img src="./src/img/thumbnail.png" alt="imagem" id="thumbnail-story">
+                <div class="sub-history">
+                    <span>Coisas Estranhas</span><br>
+                    <p>Baixando...</p>
+                </div>
+                <div class="area-gif">
+                    <img src="/src/img/download.gif" id="download-gif">
+                </div>
+            </div>
+        </div>
+     
+        <div class="content-right">
+            <h1>Baixe seus programas para assistir offline.</h1>
+            <h2>Salve seus favoritos facilmente e sempre tenha algo para assistir.</h2>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="container-tel">
+            <p id="question-tel">Perguntas? Ligue para <a href="#" id="link-fone">1 (408) 724-8973 (EUA)</a></p>
+        </div>
+        
+        <div class="box-footer">
+         
+            <div class="content-footer">
+                <ul>
+                    <li><a href="#">Perguntas frequentes</a></li>
+                    <li><a href="#">Relação com investidores</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Teste Rápido</a></li>
+                </ul>
+            </div>
+
+            <div class="content-footer">
+                <ul>
+                    <li><a href="#">Centro de ajuda</a></li>
+                    <li><a href="#">Empregos</a></li>
+                    <li><a href="#">Preferência de cookies</a></li>
+                    <li><a href="#">Notícias legais</a></li>
+                </ul>
+            </div>
+
+            <div class="content-footer">
+                <ul>
+                    <li><a href="#">Conta</a></li>
+                    <li><a href="#">Maneiras de assistir</a></li>
+                    <li><a href="#">Informação corporativa</a></li>
+                    <li><a href="#">Só na Netflix</a></li>
+                </ul>
+            </div>
+
+            <div class="content-footer">
+                <ul>
+                    <li><a href="#">Centro de mídia</a></li>
+                    <li><a href="#">Termos de uso</a></li>
+                    <li><a href="#">Contate-nos</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
