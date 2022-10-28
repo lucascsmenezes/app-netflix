@@ -6,120 +6,236 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/index.css">
     <script src="./src/js/index.js" defer></script>
-    <script
-    src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-    crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 5 Style-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
 </head>
 <body>
 
-    <div class="container-top">
-        <div id="container-img">
-            <img src="./src/img/logo.png" alt="logo" id="logo">
-        </div>
-        <div class="menu-sign">
-            <select class="select-idioma">
-                <option>Inglês</option>
-                <option>Portugues</option>
-            </select>
-            <button class="botaoEntrar" id="login">Entrar</button>
-        </div>
+<div class="container-top">
+    <div id="container-img">
+        <img src="./src/img/logo.png" alt="logo" id="logo">
     </div>
-
-    <div class="section-center">
-        <h1> Filmes ilimitados, programas de TV e muito mais.</h1>
-        <h2>Assista em qualquer lugar. Cancele a qualquer momento.</h2>
+    <div class="menu-sign">
+        <select class="select-idioma">
+            <option  style="background-color:black;">Inglês</option>
+            <option  style="background-color:black;">Portugues</option>
+        </select>
+        <button class="botaoEntrar" id="login">Entrar</button>
         
-        <div class="form-box">
-            <h3>Pronto para assistir? Digite seu e-mail para criar ou reiniciar sua associação.</h3>
-            <form>
-                <input type="text" id="input_field" placeholder="" required>
-                <p id="placeholder">Digite seu email</p>
-                <input type="submit" id="submit_form" value="Iniciar"> 
-            </form>
+    </div>
+</div>
+
+<div class="section-center">
+    <h1 class="title-section-center"> Filmes ilimitados, programas de TV e muito mais.</h1>
+    <h2 class="subtitle-section-center">Assista em qualquer lugar. Cancele a qualquer momento.</h2>
+    
+    <div class="form-box">
+        <h3 class="sub_title">Pronto para assistir? Digite seu e-mail para criar ou reiniciar sua associação.</h3>
+        <form>
+            <div class="float-label">
+                <input type="text" class="input_field" id="field_email" placeholder="Digite seu email" autocomplete="off" onkeypress="validField()" required>
+                <label for="teste">Digite seu email</label>
+            </div>
+                <button type="submit" class="submit_form" id="submit">Enviar</button>
+            <svg viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg">
+                <path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="#fff"/>
+            </svg>
+            <span id="check-email" class="check_email">Por favor digite um email válido!</span> 
+            <span id="check-submit" class="check_valid">Email é necessário!</span> 
+        </form>
+    </div>
+
+    <div class="responsive-mobile">
+        <h3 class="sub_title">Pronto para assistir? Digite seu e-mail para criar ou reiniciar sua associação.</h3>
+        <form>
+            <div class="float-label">
+                <input type="text" class="input_field" id="field_email" placeholder="Digite seu email" autocomplete="off" onkeypress="validField()" required>
+                <label for="teste">Digite seu email</label>
+            </div> 
+        </form>
+        <div class="responsive-submit">
+            <button type="submit" class="submit_form" id="submit">Enviar</button>
+            <svg viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg">
+                <path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="#fff"/>
+            </svg>
+            <span id="check-email" class="check_email">Por favor digite um email válido!</span> 
+            <span id="check-submit" class="check_valid">Email é necessário!</span> 
+        </div>
+    </div>
+</div>
+
+<div class="content-grid">
+    <div class="item1">
+        <h1 class="aling-left">Divirta-se na sua TV.</h1>
+        <h2 class="aling-left sub-title">Assista em Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players e muito mais.</h2>
+    </div>
+
+    <div class="item2">
+        <img src="./src/img/tv-background.png" id="tela-background">
+        <video autoplay="autoplay" loop="true" muted id="video01">
+            <source src="./src/video/video01.mp4" type="video/mp4" />
+        </video>
+    </div>    
+</div>
+
+
+<div class="content-grid">
+    <div class="item3">
+        <div class="card-video">
+            <img src="./src/img/mobile-background.jpg" alt="tv-background" id="backgroundStrange">
+            <img src="./src/video/video02.m4v" alt="">
+        </div>
+        <div class="card-story">
+            <div class="card-thumbnail">
+                <img src="./src/img/thumbnail.png" alt="imagem" id="thumbnail-story">
+            </div>
+            <div class="sub-history">
+                <span>Coisas Estranhas</span>
+                <p>Baixando...</p>
+            </div>
+            <div class="area-gif">
+                <img src="/src/img/download-icon.gif" id="download-gif">
+            </div>
         </div>
     </div>
 
-    <div class="section-info">
-        <div class="content-left">
-            <h1>Divirta-se na sua TV.</h1>
-            <h2>Assista em Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players e muito mais.</h2>
+    <div class="item4">
+        <h1 class="aling-left">Baixe seus programas para assistir offline.</h1>
+        <h2 class="aling-left sub-title">Salve seus favoritos facilmente e sempre tenha algo para assistir.</h2>
+    </div>
+</div>    
+
+<div class="content-grid">
+    <div class="item5">
+        <h1 class="aling-left">Assista em todos os lugares.</h1>
+        <h2 class="aling-left sub-title">Transmita filmes e programas de TV ilimitados em seu telefone, tablet, laptop e TV sem pagar mais.</h2>
+    </div>
+
+    <div class="item6">
+        <img src="./src/img/device-pile.png" id="tela-background02">
+        <video autoplay="autoplay" loop="true" muted id="video02">
+            <source src="./src/video/video02.mp4" type="video/mp4" />
+        </video>
+    </div>    
+</div>
+
+<div class="content-grid">
+    
+    <div class="item7">
+        <img src="./src/img/thumbnail-infantil.png" id="tela-background">
+    </div>   
+
+    <div class="item8">
+        <h1 class="aling-left">Crie perfis para crianças.</h1>
+        <h2 class="aling-left sub-title">Envie as crianças em aventuras com seus personagens favoritos em um espaço feito apenas para elas - grátis com sua assinatura.</h2>
+    </div> 
+</div>
+
+<div class="content-accordeon">
+    <div class="row d-flex justify-content-center">
+        <h1>Perguntas Frequentes</h1>
+    </div>    
+    <button class="accordion"> O que é Netflix?</button>
+        <div class="panel">
+            <p class="paragraph">A Netflix é um serviço de streaming que oferece uma ampla variedade de programas de TV premiados, filmes, animes, documentários e muito mais em milhares de dispositivos conectados à Internet.</p>
+            <p class="paragraph">Você pode assistir o quanto quiser, quando quiser, sem um único comercial – tudo por um preço mensal baixo. Sempre há algo novo para descobrir e novos programas de TV e filmes são adicionados toda semana!</p>
         </div>
-        <div class="content-right">
-            <img src="./src/img/tv-background.png" id="tela-background">
-            <video autoplay="autoplay" loop="true" muted>
-                <source src="./src/video/video01.mp4" type="video/mp4" />
-            </video>
+        
+    <button class="accordion">Quanto custa a Netflix?</button>
+        <div class="panel">
+            <p class="paragraph">Assista à Netflix em seu smartphone, tablet, Smart TV, laptop ou dispositivo de streaming, tudo por uma taxa mensal fixa. Os planos variam de US$ 8,29 a US$ 14,69 por mês. Sem custos extras, sem contratos.</p>
         </div>
+        
+    <button class="accordion">Como posso assistir?</button>
+        <div class="panel">
+            <p class="paragraph">Assista em qualquer lugar, a qualquer hora. Faça login com sua conta Netflix para assistir instantaneamente na web em netflix.com do seu computador pessoal ou em qualquer dispositivo conectado à Internet que ofereça o aplicativo Netflix, incluindo smart TVs, smartphones, tablets, reprodutores de mídia de streaming e consoles de jogos.</p><br>
+            <p class="paragraph">Você também pode baixar seus programas favoritos com o aplicativo iOS, Android ou Windows 10. Use os downloads para assistir enquanto estiver em trânsito e sem conexão com a Internet. Leve a Netflix com você para qualquer lugar.</p>
+        </div>
+    <button class="accordion">Como faço para cancelar?</button>
+        <div class="panel">
+            <p class="paragraph">A Netflix é flexível. Não há contratos chatos e sem compromissos. Você pode facilmente cancelar sua conta online em dois cliques. Não há taxas de cancelamento - inicie ou pare sua conta a qualquer momento..</p>
+        </div>
+    <button class="accordion">O que posso assistir na Netflix</button>
+        <div class="panel">
+            <p class="paragraph">A Netflix tem uma extensa biblioteca de filmes, documentários, programas de TV, anime, originais premiados da Netflix e muito mais. Assista o quanto quiser, quando quiser.</p>
+        </div>
+    <button class="accordion">Netflix é bom para criança?</button>
+        <div class="panel">
+            <p class="paragraph">A experiência Netflix Kids está incluída na sua assinatura para dar controle aos pais enquanto as crianças assistem a programas de TV e filmes para toda a família em seu próprio espaço.</p><br>
+            <p class="paragraph">Os perfis infantis vêm com controles parentais protegidos por PIN que permitem restringir a classificação de maturidade do conteúdo que as crianças podem assistir e bloquear títulos específicos que você não quer que as crianças vejam.</p>
+        </div>
+
+    <div class="second">
+        <h3 class="paragraph-second">Pronto para assistir? Digite seu e-mail para criar ou reiniciar sua associação.</h3>
+        <form>
+            <div class="float-label">
+                <input type="text" class="input_field second-input" id="field_email_second" placeholder="Digite seu email" onkeypress="validFieldSecond()" required>
+                <label for="teste">Digite seu email</label>
+            </div>
+            <button type="submit" class="submit_form second-submit">Enviar</button>
+            <svg viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg">
+                <path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="#fff"/>
+            </svg> 
+            <span id="check-email-second" class="check_email">Por favor digite um email válido!</span> 
+            <span id="check-submit-second" class="check_valid">Email é necessário!</span> 
+        </form>
+    </div> 
+</div>
+
+<div class="footer">
+    <div class="container-tel">
+        <p id="question-tel">Perguntas? Ligue para <a href="#" id="link-fone">1 (408) 724-8973 (EUA)</a></p>
     </div>
     
-    <div class="section-info">
-        <div class="content-left">
-            <img src="./src/img/mobile-background.jpg" alt="tv-background" id="tela-background">
-            <img src="./src/video/video01.m4v" alt="">
-            <div class="card-story">
-                <img src="./src/img/thumbnail.png" alt="imagem" id="thumbnail-story">
-                <div class="sub-history">
-                    <span>Coisas Estranhas</span><br>
-                    <p>Baixando...</p>
-                </div>
-                <div class="area-gif">
-                    <img src="/src/img/download.gif" id="download-gif">
-                </div>
-            </div>
+    <div class="box-footer">
+        
+        <div class="content-footer">
+            <ul>
+                <li><a href="#">Perguntas frequentes</a></li>
+                <li><a href="#">Relação com investidores</a></li>
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Teste Rápido</a></li>
+            </ul>
         </div>
-     
-        <div class="content-right">
-            <h1>Baixe seus programas para assistir offline.</h1>
-            <h2>Salve seus favoritos facilmente e sempre tenha algo para assistir.</h2>
+
+        <div class="content-footer">
+            <ul>
+                <li><a href="#">Centro de ajuda</a></li>
+                <li><a href="#">Empregos</a></li>
+                <li><a href="#">Preferência de cookies</a></li>
+                <li><a href="#">Notícias legais</a></li>
+            </ul>
+        </div>
+
+        <div class="content-footer">
+            <ul>
+                <li><a href="#">Conta</a></li>
+                <li><a href="#">Maneiras de assistir</a></li>
+                <li><a href="#">Informação corporativa</a></li>
+                <li><a href="#">Só na Netflix</a></li>
+            </ul>
+        </div>
+
+        <div class="content-footer">
+            <ul>
+                <li><a href="#">Centro de mídia</a></li>
+                <li><a href="#">Termos de uso</a></li>
+                <li><a href="#">Contate-nos</a></li>
+            </ul>
         </div>
     </div>
-
-    <footer>
-
-        <div class="container-tel">
-            <p id="question-tel">Perguntas? Ligue para <a href="#" id="link-fone">1 (408) 724-8973 (EUA)</a></p>
-        </div>
-        
-        <div class="box-footer">
-         
-            <div class="content-footer">
-                <ul>
-                    <li><a href="#">Perguntas frequentes</a></li>
-                    <li><a href="#">Relação com investidores</a></li>
-                    <li><a href="#">Privacidade</a></li>
-                    <li><a href="#">Teste Rápido</a></li>
-                </ul>
-            </div>
-
-            <div class="content-footer">
-                <ul>
-                    <li><a href="#">Centro de ajuda</a></li>
-                    <li><a href="#">Empregos</a></li>
-                    <li><a href="#">Preferência de cookies</a></li>
-                    <li><a href="#">Notícias legais</a></li>
-                </ul>
-            </div>
-
-            <div class="content-footer">
-                <ul>
-                    <li><a href="#">Conta</a></li>
-                    <li><a href="#">Maneiras de assistir</a></li>
-                    <li><a href="#">Informação corporativa</a></li>
-                    <li><a href="#">Só na Netflix</a></li>
-                </ul>
-            </div>
-
-            <div class="content-footer">
-                <ul>
-                    <li><a href="#">Centro de mídia</a></li>
-                    <li><a href="#">Termos de uso</a></li>
-                    <li><a href="#">Contate-nos</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    <div class="translated">
+        <select class="select-idioma">
+            <option  style="background-color:black;">Inglês</option>
+            <option  style="background-color:black;">Portugues</option>
+        </select>
+    </div>
+</div>
 
 </body>
 </html>
