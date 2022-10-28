@@ -638,7 +638,7 @@ option{
         content: "\25BC";
         color: white;
         position: relative;
-        font-size: small;
+        font-size: 10px;
         right: 120px;
     }
 
@@ -677,12 +677,9 @@ option{
     form {
         width: 100%;
         display: flex;
-        padding-left: 10px;
-        padding-right: 10px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 15px;
         gap: 45px;
 
     }
