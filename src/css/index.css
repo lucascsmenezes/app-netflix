@@ -452,7 +452,7 @@ option{
 
 .sub-history{
     width: -webkit-fill-available;
-    padding: 5px;
+    padding: 15px 0 0 5px;
 }
 
 .card-story{
@@ -461,7 +461,7 @@ option{
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    width: 300px;
+    width: 350px;
     height: 100px;
     background-color: black;
     border: solid 2px gray;
@@ -593,9 +593,6 @@ option{
     border-right: 0;  
     border-bottom: 0;
 }
-
-
-
 #tela-background02{
     position: absolute;
     margin-top: 10px;
@@ -607,6 +604,8 @@ option{
     width: 100%;
     padding-left: 80px;
 }
+/*-------- END PAGE --------*/
+
 
 @media screen and (max-width: 600px){
     .container-top{
