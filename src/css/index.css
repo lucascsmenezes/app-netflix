@@ -17,7 +17,7 @@
 }
 
 body{
-    background-image: url('/src/img/background.jpg');
+    /* background-image: url('/src/img/background.jpg'); */
     backdrop-filter: brightness(0.5);
     z-index: -999;
 
